@@ -1,0 +1,93 @@
+<!doctype html>
+<html lang="de">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="color-scheme" content="light dark" />
+    <title>KARABAG Dictation herunterladen</title>
+    <link rel="stylesheet" href="site.css" />
+    <script src="downloads.js" defer></script>
+  </head>
+  <body>
+    <main>
+      <header>
+        <p class="brand">KARABAG</p>
+        <h1>Dictation</h1>
+        <p class="intro">
+          Diktieren auf deinem Computer.<br />Deine Sprache bleibt lokal.
+        </p>
+      </header>
+      <section aria-labelledby="download-title">
+        <h2 id="download-title">Installieren</h2>
+        <p>
+          Herunterladen, installieren und die Einrichtung starten. Die App lädt
+          ihre Sprachmodelle einmalig selbst. Anschließend kannst du offline
+          diktieren.
+        </p>
+        <div class="downloads">
+          <article>
+            <h3>Mac</h3>
+            <p>
+              Für Macs mit Apple-Chip. Intel-Unterstützung folgt nach Prüfung.
+            </p>
+            <a class="download" id="mac-download" aria-disabled="true"
+              >Für Mac herunterladen</a
+            ><small>macOS 11 oder neuer</small>
+          </article>
+          <article>
+            <h3>Windows</h3>
+            <p>Für Windows auf ARM, einschließlich Parallels auf Macs mit Apple-Chip.</p>
+            <a class="download" id="windows-download" aria-disabled="true"
+              >Für Windows herunterladen</a
+            ><small>Windows 11 · ARM64</small>
+          </article>
+        </div>
+        <p id="release-status" role="status">
+          Verfügbare Installationspakete werden geprüft …
+        </p>
+        <p class="notice">
+          Alpha-Teststand. Die
+          Modellqualität ist noch nicht freigegeben. Die kostenlose Ausgabe
+          besitzt keine offizielle Herstellerfreigabe von Apple oder Microsoft;
+          beim Öffnen können Sicherheitswarnungen erscheinen.
+        </p>
+      </section>
+      <section aria-labelledby="update-title">
+        <h2 id="update-title">Updates bleiben in der App</h2>
+        <p>
+          Die App informiert dich über neue Versionen. Ein Klick auf „Update
+          installieren“ lädt das geprüfte Paket und startet die aktualisierte
+          App. Deine Einstellungen, Regeln, Diktate und Modelle bleiben
+          erhalten.
+        </p>
+      </section>
+      <details>
+        <summary>Was brauche ich?</summary>
+        <p>
+          Für die erste Einrichtung eine Internetverbindung, etwa 5 GB für die
+          Modelle und zusätzlichen freien Speicher für Installation und Updates.
+          Für Diktate brauchst du ein Mikrofon. Die App führt dich durch die
+          notwendigen Systemberechtigungen. Firmenrichtlinien können eine
+          Installation verhindern.
+        </p>
+      </details>
+      <details>
+        <summary>Wie öffne ich die kostenlose Ausgabe?</summary>
+        <p>
+          Die kostenlose Ausgabe kann als unbekannter Entwickler angezeigt
+          werden. Prüfe die Herkunft des Downloads. Auf dem Mac beschreibt Apple
+          die bewusste Freigabe unter „Datenschutz &amp; Sicherheit“. Auf
+          Windows können Defender oder Firmenrichtlinien die Installation
+          blockieren. Die App verändert keine Schutzfunktionen.
+        </p>
+        <a href="https://support.apple.com/de-de/102445"
+          >Apples Hinweise zum Öffnen von Apps</a
+        >
+      </details>
+      <footer>
+        <span id="version"></span><a href="SHA256SUMS">Prüfsummen</a
+        ><a href="licenses.html">Lizenzen und Herkunft</a>
+      </footer>
+    </main>
+  </body>
+</html>
