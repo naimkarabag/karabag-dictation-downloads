@@ -1,15 +1,15 @@
 {
-  "version": "0.1.0-alpha.8",
-  "notes": "Alpha-Teststand: fünf lokale Modellvarianten je Bereich; Regelvorschau, Audio-Feedback und versteckter Start entfernt. Sprachqualität noch nicht freigegeben.",
-  "pub_date": "2026-10-01T13:23:38.003098+00:00",
+  "version": "0.1.0-alpha.9",
+  "notes": "Korrigiertes Mac-Updatepaket; f\u00fcnf lokale Modellvarianten je Bereich. Bestehende Modelle, Einstellungen, Regeln und Verlauf bleiben erhalten. Alpha-Teststand; Sprachqualit\u00e4t noch nicht freigegeben.",
+  "pub_date": "2026-10-01T14:06:55.452697+00:00",
   "platforms": {
     "darwin-aarch64": {
-      "url": "https://github.com/naimkarabag/karabag-dictation-downloads/releases/download/v0.1.0-alpha.8/KARABAG-Dictation-0.1.0-alpha.8-mac.app.tar.gz",
-      "signature": "dW50cnVzdGVkIGNvbW1lbnQ6IHNpZ25hdHVyZSBmcm9tIHRhdXJpIHNlY3JldCBrZXkKUlVSdS80YVJBT3NDTHJGQUV2eWZKRHp1b0JxaUlGWXBZVExQUUtPVjVKMmtpR3VuTjArbWpkcUdjQ2ZEYi9PMjhOMnZTWThHaUhtWGFOYzJORTJRWE9BTDhQZGp6SGw4TmdFPQp0cnVzdGVkIGNvbW1lbnQ6IHRpbWVzdGFtcDoxNzkwODYwODY0CWZpbGU6S0FSQUJBRy1EaWN0YXRpb24tMC4xLjAtYWxwaGEuOC1tYWMuYXBwLnRhci5negl2ZXJzaW9uOjAuMS4wLWFscGhhLjgKYk9wZ0hGSkYweEpVU2xHOFVmbnpQS2R0WDVqTHRBTE5TbTVzNENSRmVRNmFJYytKVmdUOEljT2wybG5DOERpUzhEQTM3cFhJdEhodXg5bGJ0bCtyQVE9PQo="
+      "url": "https://github.com/naimkarabag/karabag-dictation-downloads/releases/download/v0.1.0-alpha.9/KARABAG-Dictation-0.1.0-alpha.9-mac.app.tar.gz",
+      "signature": "dW50cnVzdGVkIGNvbW1lbnQ6IHNpZ25hdHVyZSBmcm9tIHRhdXJpIHNlY3JldCBrZXkKUlVSdS80YVJBT3NDTGpiZVp4a3Y1K3NnMDRJeUpXRnZ0QjBtMkg0V1RucUYvUmVrSXpNY3FNalNyN0d0bTFqN1VQMStEMWVHeWVNUU8wcmtITmgweWg1ZGZ0MURoaDVQUFFzPQp0cnVzdGVkIGNvbW1lbnQ6IHRpbWVzdGFtcDoxNzkwODYyOTYyCWZpbGU6S0FSQUJBRyBEaWN0YXRpb24uYXBwLnRhci5negl2ZXJzaW9uOjAuMS4wLWFscGhhLjkKd2xSRlZHdDhxSzg3UUtGSmphWjdjRUlqcnNnVXdKSHZuOXdnZ3V5UTlzc25adlJlU3ZrY0FhcTM1alhXc05ZZmhyMlkvekNYY2c2SW9pNExxemZmQ2c9PQo="
     },
     "windows-aarch64": {
-      "url": "https://github.com/naimkarabag/karabag-dictation-downloads/releases/download/v0.1.0-alpha.8/KARABAG-Dictation-0.1.0-alpha.8-windows-arm64-setup.exe",
-      "signature": "dW50cnVzdGVkIGNvbW1lbnQ6IHNpZ25hdHVyZSBmcm9tIHRhdXJpIHNlY3JldCBrZXkKUlVSdS80YVJBT3NDTG12R2hGOCtneFN6eTM0d0dnVFIwODgzd2wyczdLVFBQMHRHL0JMaGxvZGxaV2p0bEt2ZjBwUDk2cWQxVWo1MWdFNzlYMVh1Z05PdllZaCtvTUlpZ1FjPQp0cnVzdGVkIGNvbW1lbnQ6IHRpbWVzdGFtcDoxNzkwODYwODY0CWZpbGU6S0FSQUJBRy1EaWN0YXRpb24tMC4xLjAtYWxwaGEuOC13aW5kb3dzLWFybTY0LXNldHVwLmV4ZQl2ZXJzaW9uOjAuMS4wLWFscGhhLjgKY2d2NU5aTWVYUTQ4dVdZdThuSFhlc0U1bTQwQ3hCemIyOFcyS0xWVXZlaVRRR2Z6b1U0MEtielQrc1BsbnhFS0lpelEwZno2Zk11cGZVTzBoYS8rQ2c9PQo="
+      "url": "https://github.com/naimkarabag/karabag-dictation-downloads/releases/download/v0.1.0-alpha.9/KARABAG-Dictation-0.1.0-alpha.9-windows-arm64-setup.exe",
+      "signature": "dW50cnVzdGVkIGNvbW1lbnQ6IHNpZ25hdHVyZSBmcm9tIHRhdXJpIHNlY3JldCBrZXkKUlVSdS80YVJBT3NDTHVtTlJVc1BXVnhoTTJRNFhhWlRqNmV0aEZnWHF6elR2Z3lZZ2VmVGlOZ3V2TDdzQUE5TlBzb05Kb0xVNmY4dmZzN0c5aFZjUFNIWDRUNS9CTUY0M2cwPQp0cnVzdGVkIGNvbW1lbnQ6IHRpbWVzdGFtcDoxNzkwODYzNjA5CWZpbGU6S0FSQUJBRy1EaWN0YXRpb24tMC4xLjAtYWxwaGEuOS13aW5kb3dzLWFybTY0LXNldHVwLmV4ZQl2ZXJzaW9uOjAuMS4wLWFscGhhLjkKUDVYSHl6K1VtaVhrNHZkeTFiYk1idGZnQU9BT2xnaTZvMTg2MkpNL093U3lheTFGM0ViemhzbE9oZnI0YWFVR1hHMy9VUXZXQ3B5ek1hendjbXdmQlE9PQo="
     }
   }
 }
