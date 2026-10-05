@@ -1,15 +1,15 @@
 {
-  "version": "0.1.0-alpha.19",
-  "notes": "Dauerhafter Debug-Modus mit lokalem Diagnoseprotokoll, genauen Stufenzeiten und sicherem Datei-Export. Alpha-Teststand.",
-  "pub_date": "2026-10-05T08:53:48.684865+00:00",
+  "version": "0.1.0-alpha.21",
+  "notes": "Neue Diktatbereinigung als Flie\u00dftext, gr\u00f6\u00dfere Welle und gef\u00fcllter Abbrechen-Button, korrigierte Aktionsk\u00fcrzel und schlie\u00dfbare Ergebnisse. Alpha-Teststand; Modellqualit\u00e4t bleibt begrenzt.",
+  "pub_date": "2026-10-05T11:48:10.311573+00:00",
   "platforms": {
     "darwin-aarch64": {
-      "url": "https://github.com/naimkarabag/karabag-dictation-downloads/releases/download/v0.1.0-alpha.19/KARABAG-Dictation-0.1.0-alpha.19-mac.app.tar.gz",
-      "signature": "dW50cnVzdGVkIGNvbW1lbnQ6IHNpZ25hdHVyZSBmcm9tIHRhdXJpIHNlY3JldCBrZXkKUlVSdS80YVJBT3NDTG5pUGo1TzkzRGl2eWJQT1BrRTZmUlo1WVM5K2JWVW5VVGpTK3I2dFk3bGJzY3pyblRNRldFcnlzTlBJY0o3R3R3QWtMcGZMZGxwbXlUb2JQajVXYndNPQp0cnVzdGVkIGNvbW1lbnQ6IHRpbWVzdGFtcDoxNzkxMTkwMjgwCWZpbGU6S0FSQUJBRyBEaWN0YXRpb24uYXBwLnRhci5negl2ZXJzaW9uOjAuMS4wLWFscGhhLjE5Cm12Z09kNjh5bEVvQ0ZjOE5sYUUxQlVjK1R2d0duOWI3TVB1R1RwWFM3YlBzL2lTMXc1RHhrUi9ITkIrcVpXZWJ3YU8rTmIzcEIzeXJHS3JOcmF2ZERBPT0K"
+      "url": "https://github.com/naimkarabag/karabag-dictation-downloads/releases/download/v0.1.0-alpha.21/KARABAG-Dictation-0.1.0-alpha.21-mac.app.tar.gz",
+      "signature": "dW50cnVzdGVkIGNvbW1lbnQ6IHNpZ25hdHVyZSBmcm9tIHRhdXJpIHNlY3JldCBrZXkKUlVSdS80YVJBT3NDTGlPUjFIQzJMWkJVMHIzUnhUZ1RsVUJ4NEJvcGhObkRtZHkzYTFUdUltNjRaTmlpV1A1UXBUTTMyRHEzZFhUR05nenNUNkFhY3RIZUpWVTJ2MU5zUUFzPQp0cnVzdGVkIGNvbW1lbnQ6IHRpbWVzdGFtcDoxNzkxMjAwNjg0CWZpbGU6S0FSQUJBRyBEaWN0YXRpb24uYXBwLnRhci5negl2ZXJzaW9uOjAuMS4wLWFscGhhLjIxCmllai9wcnJvVWs0T0FpeVhKZTF5ZnpZTXFESnc4eE9KME1XaGFiWXZJK083aXUvNzArZ04wdS9UWk5uekRrMFRneWwzWkJBekVhbWNucXBhdTlkWkJ3PT0K"
     },
     "windows-aarch64": {
-      "url": "https://github.com/naimkarabag/karabag-dictation-downloads/releases/download/v0.1.0-alpha.19/KARABAG-Dictation-0.1.0-alpha.19-windows-arm64-setup.exe",
-      "signature": "dW50cnVzdGVkIGNvbW1lbnQ6IHNpZ25hdHVyZSBmcm9tIHRhdXJpIHNlY3JldCBrZXkKUlVSdS80YVJBT3NDTGlYSW1ZM2k0ZDRnNTMrNzBxNkdCTFYrREhoYXMwYzNmVVZLTXBnMEJHb0huRmc0b0ROYU9TSDRabGx4ZmFhdjk5by84Ylp4THFOc1Rpc2RpTEx2Znd3PQp0cnVzdGVkIGNvbW1lbnQ6IHRpbWVzdGFtcDoxNzkxMTkwNDI3CWZpbGU6d2luZG93cy1hcm02NC1zZXR1cC5leGUJdmVyc2lvbjowLjEuMC1hbHBoYS4xOQo4R2dvb1prbEg5MllaaDZOQ0R1dFh6QUw5VHpuQldNMVlZWXFTYnE3TnFJS3FISWVXYVlqTjJoRTRkVmdpZmNtMWpJc0xKQ3h5UWpHeTAxQ3hDcEJEZz09Cg=="
+      "url": "https://github.com/naimkarabag/karabag-dictation-downloads/releases/download/v0.1.0-alpha.21/KARABAG-Dictation-0.1.0-alpha.21-windows-arm64-setup.exe",
+      "signature": "dW50cnVzdGVkIGNvbW1lbnQ6IHNpZ25hdHVyZSBmcm9tIHRhdXJpIHNlY3JldCBrZXkKUlVSdS80YVJBT3NDTGtYNWJBb21ZWFU5OG5hZVZCQkJHNlNFdlhKa2lsNWtJZUFKRGMvR2NyNlZqdWFaQUFscEFhTFdTTG14UDNwSUJVTXpPenZ4K0NGZW92WjZBWSswdEE4PQp0cnVzdGVkIGNvbW1lbnQ6IHRpbWVzdGFtcDoxNzkxMjAwODg4CWZpbGU6d2luZG93cy1hcm02NC1zZXR1cC5leGUJdmVyc2lvbjowLjEuMC1hbHBoYS4yMQppTGM5N2x5TGtaclVsMzRmQlp2dzQwbTlaMlgrUkxJSEtnTUZHQ2xCeWVxVk45VUpZZmxHZWI3dkNRQkRjaUtDdDRjaDZPNkk4YU5FNGxteDB6WkdCUT09Cg=="
     }
   }
 }
