@@ -1,0 +1,387 @@
+<!doctype html>
+<html lang="de">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="color-scheme" content="light dark" />
+    <title>KARABAG Dictation mit Intune verteilen</title>
+    <link rel="stylesheet" href="site.css" />
+    <script src="downloads.js" defer></script>
+    <script src="intune.js" defer></script>
+  </head>
+  <body>
+    <main class="admin">
+      <nav aria-label="Seitennavigation">
+        <a href="./">← Downloads</a><span>Administration · Windows x64</span>
+      </nav>
+      <header>
+        <p class="brand">KARABAG</p>
+        <h1>Ein Paket.<br />Fünf Schritte.</h1>
+        <p class="intro">
+          Dictation mit deiner bestehenden Intune-Verwaltung bereitstellen. Das
+          fertige Paket enthält den x64-Installer und die Installationsbefehle.
+        </p>
+        <p class="notice">
+          Alpha-Teststand. Die Veröffentlichung ist keine Sprachqualitäts- oder
+          Flottenabnahme. Eine Zuweisung an Mitarbeiter erfolgt erst durch
+          deinen Admin.
+        </p>
+      </header>
+      <figure class="flow" aria-label="Illustration des Verteilwegs">
+        <div><b>01</b><span>Paket laden</span></div>
+        <div><b>02</b><span>App anlegen</span></div>
+        <div><b>03</b><span>Felder übernehmen</span></div>
+        <div><b>04</b><span>Gruppe zuweisen</span></div>
+        <div><b>05</b><span>Erfolg prüfen</span></div>
+        <figcaption>
+          Illustration des Ablaufs · keine Aufnahme eines Intune-Tenants
+        </figcaption>
+      </figure>
+      <aside class="prerequisites" aria-labelledby="prerequisites-title">
+        <h2 id="prerequisites-title">Vorhandene Voraussetzungen</h2>
+        <p>
+          Windows 11 auf Intel oder AMD (x64), Pro / Enterprise / Education,
+          außerhalb des S-Modus; passende vorhandene Intune-Lizenzierung,
+          Entra-Anbindung und Intune-Registrierung. Die Intune Management
+          Extension muss aktuell sein. Ein Benutzer muss angemeldet sein.
+        </p>
+        <p>
+          <strong>Windows Home:</strong> Microsoft führt Home allgemein als
+          Intune-Plattform. Die Management Extension für diesen Win32-Verteilweg
+          unterstützt Home jedoch nicht. Home-Nutzer verwenden den
+          <a id="windows-x64-download" aria-disabled="true"
+            >normalen x64-Installer</a
+          >. Ein Editionsupgrade ist nicht Teil dieser Anleitung.
+        </p>
+        <p>
+          „Intel i5“ allein belegt weder Leistung noch ausreichenden
+          Arbeitsspeicher. Es gibt keine 8-GB- oder Wartezeitfreigabe. Die
+          bisherigen x64-Prüfungen erfolgen unter Emulation in einer
+          Windows-ARM64-VM; ein physischer Intel-/AMD-PC bleibt gesondert zu
+          prüfen.
+        </p>
+      </aside>
+      <section class="step" aria-labelledby="step-1">
+        <span class="number" aria-hidden="true">01</span>
+        <div>
+          <h2 id="step-1">Die richtige Datei herunterladen</h2>
+          <p>
+            Für Intune die <strong>.intunewin</strong>-Datei laden. Sie ist
+            bereits fertig paketiert. Die zweite Datei dient später zur
+            Erkennung; du musst nichts neu paketieren.
+          </p>
+          <div class="downloads">
+            <article>
+              <h3>Win32-Paket</h3>
+              <p>Windows x64 · 0.1.0-alpha.26</p>
+              <a class="download" id="intune-download" aria-disabled="true"
+                >Intune-Paket herunterladen</a
+              >
+            </article>
+            <article>
+              <h3>Erkennung</h3>
+              <p>Passend zu diesem Paket</p>
+              <a
+                class="download"
+                id="intune-detect-download"
+                aria-disabled="true"
+                >detect.ps1 herunterladen</a
+              >
+            </article>
+          </div>
+          <p id="release-status" role="status">
+            Verfügbare Dateien werden geprüft …
+          </p>
+        </div>
+      </section>
+      <section class="step" aria-labelledby="step-2">
+        <span class="number" aria-hidden="true">02</span>
+        <div>
+          <h2 id="step-2">Eine Windows-App hinzufügen</h2>
+          <p>
+            Im
+            <a href="https://intune.microsoft.com/"
+              >Microsoft Intune Admin Center</a
+            >: <strong>Apps → Alle Apps → Erstellen</strong>. Plattform
+            <strong>Windows</strong> und Typ
+            <strong>Windows-App (Win32)</strong> wählen. Unter „App-Paketdatei
+            auswählen“ die geladene .intunewin-Datei hochladen.
+          </p>
+          <div class="field">
+            <span>Name</span><code>KARABAG Dictation</code
+            ><button type="button" data-copy>Kopieren</button>
+          </div>
+          <div class="field">
+            <span>Herausgeber</span><code>KARABAG</code
+            ><button type="button" data-copy>Kopieren</button>
+          </div>
+          <div class="field">
+            <span>App-Version</span><code>0.1.0-alpha.26</code
+            ><button type="button" data-copy>Kopieren</button>
+          </div>
+        </div>
+      </section>
+      <section class="step" aria-labelledby="step-3">
+        <span class="number" aria-hidden="true">03</span>
+        <div>
+          <h2 id="step-3">Diese Einstellungen übernehmen</h2>
+          <h3>Programm</h3>
+          <div class="field">
+            <span>Installationsbefehl · Befehlszeile</span
+            ><code>karabag-intune.exe install</code
+            ><button type="button" data-copy>Kopieren</button>
+          </div>
+          <div class="field">
+            <span>Deinstallationsbefehl</span
+            ><code>karabag-intune.exe uninstall</code
+            ><button type="button" data-copy>Kopieren</button>
+          </div>
+          <dl class="settings">
+            <div>
+              <dt>Installationsverhalten</dt>
+              <dd><strong>Benutzer</strong> / User</dd>
+            </div>
+            <div>
+              <dt>Installationszeit erforderlich</dt>
+              <dd>15 Minuten</dd>
+            </div>
+            <div>
+              <dt>Geräteneustartverhalten</dt>
+              <dd>Keine bestimmte Aktion / No specific action</dd>
+            </div>
+            <div>
+              <dt>Deinstallation verfügbar zulassen</dt>
+              <dd>Ja</dd>
+            </div>
+          </dl>
+          <p class="notice">
+            <strong>Benutzer ist verbindlich.</strong> SYSTEM würde in das
+            falsche Profil installieren und wird vom Paket abgewiesen. Keine
+            Administratorrechte notwendig. Die stille Installation zeigt keine
+            Dialoge und startet die App nicht. Läuft Dictation, bleibt es
+            geöffnet; Intune versucht die Installation später erneut.
+          </p>
+          <table>
+            <caption>
+              Rückgabecodes
+            </caption>
+            <thead>
+              <tr>
+                <th>Code</th>
+                <th>Typ in Intune</th>
+                <th>Bedeutung</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>0</td>
+                <td>Erfolg / Success</td>
+                <td>Installation oder Deinstallation abgeschlossen</td>
+              </tr>
+              <tr>
+                <td>1618</td>
+                <td>Wiederholen / Retry</td>
+                <td>App läuft; Aufnahme zuerst regulär beenden</td>
+              </tr>
+              <tr>
+                <td>1603</td>
+                <td>Fehler / Failed</td>
+                <td>Prüfung oder Installation fehlgeschlagen</td>
+              </tr>
+            </tbody>
+          </table>
+          <h3>Anforderungen</h3>
+          <dl class="settings">
+            <div>
+              <dt>Installation auf 32-Bit-Systemen zulassen</dt>
+              <dd>Nein</dd>
+            </div>
+            <div>
+              <dt>Zulässige Systemarchitekturen</dt>
+              <dd><strong>x64</strong> (ARM64 nicht auswählen)</dd>
+            </div>
+            <div>
+              <dt>Mindestens erforderliches Betriebssystem</dt>
+              <dd>Windows 11 21H2</dd>
+            </div>
+            <div>
+              <dt>Weitere Hardwarefelder</dt>
+              <dd>
+                Nicht festlegen; keine nachgewiesene RAM-/CPU-Mindestfreigabe
+              </dd>
+            </div>
+          </dl>
+          <p>
+            Diese OS-Auswahl ist die technische Untergrenze. Nur
+            Windows-Versionen verteilen, die in deiner Verwaltung noch
+            unterstützt werden. Für die Ersteinrichtung fallen mehrere GB
+            Modell-Downloads an; Modelle und Updates brauchen zusätzlich freien
+            Speicher.
+          </p>
+          <h3>Erkennungsregeln</h3>
+          <dl class="settings">
+            <div>
+              <dt>Regelformat</dt>
+              <dd>Benutzerdefiniertes Erkennungsskript verwenden</dd>
+            </div>
+            <div>
+              <dt>Skriptdatei</dt>
+              <dd>Die in Schritt 1 geladene detect.ps1</dd>
+            </div>
+            <div>
+              <dt>Als 32-Bit-Prozess auf 64-Bit-Clients ausführen</dt>
+              <dd>Nein</dd>
+            </div>
+            <div>
+              <dt>Skriptsignaturprüfung erzwingen</dt>
+              <dd>
+                Nein (das bereitgestellte Skript hat keine Vertriebsignatur)
+              </dd>
+            </div>
+          </dl>
+          <p>
+            Die Erkennung prüft die benutzerbezogene Installation, die
+            tatsächliche x64-App und deren Version. Neuere App-Updates gelten
+            ebenfalls als installiert: Intune installiert keine ältere Alpha
+            darüber. Unternehmensrichtlinien für PowerShell, Defender, AppLocker
+            und WDAC bleiben wirksam. Bei einer Sperre nach deiner bestehenden
+            Richtlinie vorgehen; Schutzfunktionen nicht deaktivieren.
+          </p>
+          <p>
+            Abhängigkeiten und Ablösung für die erste Anlage leer lassen. Native
+            Laufzeiten sind im Installer enthalten. Ein öffentliches
+            Code-Signing-Zertifikat wird für dieses klassische Win32-Paket nicht
+            gekauft; eure Richtlinien können trotzdem eine vertrauenswürdige
+            Vertriebsignatur verlangen.
+          </p>
+        </div>
+      </section>
+      <section class="step" aria-labelledby="step-4">
+        <span class="number" aria-hidden="true">04</span>
+        <div>
+          <h2 id="step-4">Eine Benutzergruppe zuweisen</h2>
+          <p>
+            Unter
+            <strong>Zuweisungen → Für registrierte Geräte verfügbar</strong>
+            eure vorgesehene <strong>Benutzergruppe</strong> hinzufügen. Die
+            Nutzer installieren die App bewusst über das Unternehmensportal. Zum
+            Einstieg eine kleine Pilotgruppe verwenden.
+          </p>
+          <p>
+            Wenn die Installation für eine freigegebene Gruppe automatisch
+            erfolgen soll, dieselbe Benutzergruppe stattdessen unter
+            <strong>Erforderlich</strong> zuweisen. Nicht gleichzeitig als
+            „Deinstallieren“ zuweisen. Anschließend „Überprüfen + erstellen“
+            kontrollieren und „Erstellen“ wählen.
+          </p>
+          <p class="notice">
+            Intune stellt die App bereit. Updates laufen anschließend weiterhin
+            über den signierten Kanal in der App. Bei einem späteren neuen
+            Intune-Paket die passende Erkennung übernehmen; eine Ablösung
+            braucht kein vorheriges Löschen der App oder ihrer Daten.
+          </p>
+        </div>
+      </section>
+      <section class="step" aria-labelledby="step-5">
+        <span class="number" aria-hidden="true">05</span>
+        <div>
+          <h2 id="step-5">Installation und Einrichtung unterscheiden</h2>
+          <p>
+            In der angelegten App unter
+            <strong>Überwachen → Benutzerinstallationsstatus</strong>
+            beziehungsweise „Geräteinstallationsstatus“ den Status
+            <strong>Installiert</strong> prüfen. Im Startmenü des Nutzers steht
+            danach KARABAG Dictation. Eine erfolgreiche Installation bedeutet
+            noch nicht, dass die Sprachmodelle eingerichtet sind.
+          </p>
+          <div class="milestones">
+            <article>
+              <span>Intune</span>
+              <h3>App installiert</h3>
+              <p>
+                Installer fertig, x64-Version erkannt. Die App wurde noch nicht
+                automatisch gestartet.
+              </p>
+            </article>
+            <article>
+              <span>Erster App-Start</span>
+              <h3>Modelle einrichten</h3>
+              <p>
+                Nutzer öffnet die App, erlaubt das Mikrofon und lädt lokale
+                Modelle in sein eigenes Profil. Internet, mehrere GB Download
+                und Wartezeit einplanen.
+              </p>
+            </article>
+            <article>
+              <span>Danach</span>
+              <h3>Diktieren prüfen</h3>
+              <p>
+                Ein kurzes Diktat im vorgesehenen Textfeld prüfen. Erst nach der
+                Einrichtung ist Offline-Diktieren möglich.
+              </p>
+            </article>
+          </div>
+          <details>
+            <summary>Die Installation wartet oder schlägt fehl</summary>
+            <p>
+              Bei Code 1618 Dictation regulär schließen; Intune kann erneut
+              versuchen. Bei 1603 den Benutzerkontext, freien Speicher und eure
+              Schutzrichtlinien prüfen. Intune-Protokolle liegen unter
+              <code
+                >C:\ProgramData\Microsoft\IntuneManagementExtension\Logs</code
+              >. Kein Neustart oder Abbruch einer laufenden Aufnahme wird
+              erzwungen.
+            </p>
+          </details>
+          <details>
+            <summary>Deinstallation und persönliche Daten</summary>
+            <p>
+              Die angegebene Deinstallation entfernt die App im jeweiligen
+              Benutzerprofil. Modelle, Einstellungen, Regeln und aufbewahrte
+              Diktate bleiben erhalten. Eine laufende App wird nicht beendet.
+              Zum Neuinstallieren dieselben Befehle verwenden.
+            </p>
+          </details>
+        </div>
+      </section>
+      <section class="sources">
+        <h2>Offizielle Grundlagen</h2>
+        <p>
+          Feldnamen und Voraussetzungen geprüft am 05.10.2026. Je nach
+          Portalsprache können Beschriftungen leicht abweichen.
+        </p>
+        <ul>
+          <li>
+            <a
+              href="https://learn.microsoft.com/en-us/intune/app-management/deployment/add-win32"
+              >Microsoft: Win32-App hinzufügen, zuweisen und überwachen</a
+            >
+          </li>
+          <li>
+            <a
+              href="https://learn.microsoft.com/en-us/intune/device-management/tools/management-extension-windows"
+              >Microsoft: Management Extension und Home-Grenze</a
+            >
+          </li>
+          <li>
+            <a
+              href="https://learn.microsoft.com/en-us/intune/fundamentals/ref-supported-platforms"
+              >Microsoft: allgemein unterstützte Windows-Editionen</a
+            >
+          </li>
+          <li>
+            <a
+              href="https://github.com/microsoft/Microsoft-Win32-Content-Prep-Tool"
+              >Microsoft: kostenloses Werkzeug für das Paketformat</a
+            >
+          </li>
+        </ul>
+      </section>
+      <p id="copy-status" role="status" aria-live="polite"></p>
+      <footer>
+        <span id="version">Version 0.1.0-alpha.26</span
+        ><a href="SHA256SUMS">Prüfsummen</a><a href="./">Alle Downloads</a>
+      </footer>
+    </main>
+  </body>
+</html>

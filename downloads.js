@@ -8,7 +8,14 @@
     for (const [id, key] of [
       ["mac-download", "mac"],
       ["windows-download", "windows"],
+      ["windows-x64-download", "windows_x64"],
+      ["windows-arm-download", "windows_arm"],
+      ["intune-download", "intune"],
+      ["intune-detect-download", "intune_detect"],
     ]) {
+      const link = document.getElementById(id);
+      if (!link) continue;
+      if (!release[key]) throw new Error("Download unavailable");
       const url = new URL(release[key]);
       if (
         url.protocol !== "https:" ||
@@ -18,7 +25,6 @@
         )
       )
         throw new Error("Unexpected download source");
-      const link = document.getElementById(id);
       link.href = url.href;
       link.removeAttribute("aria-disabled");
     }
