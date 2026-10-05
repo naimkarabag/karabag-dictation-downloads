@@ -3,8 +3,8 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <meta name="color-scheme" content="light dark" />
-    <title>KARABAG Dictation mit Intune verteilen</title>
+    <meta name="color-scheme" content="light" />
+    <title>karabag-dict mit Intune verteilen</title>
     <link rel="stylesheet" href="site.css" />
     <script src="downloads.js" defer></script>
     <script src="intune.js" defer></script>
@@ -12,14 +12,18 @@
   <body>
     <main class="admin">
       <nav aria-label="Seitennavigation">
-        <a href="./">← Downloads</a><span>Administration · Windows x64</span>
+        <a class="brand" href="./" aria-label="karabag-dict"
+          ><span>K</span>arabag-dict</a
+        ><a href="./">Alle Downloads</a
+        ><span>Administration · Windows x64</span>
       </nav>
       <header>
-        <p class="brand">KARABAG</p>
+        <p class="brand"><span>K</span>arabag-dict</p>
         <h1>Ein Paket.<br />Fünf Schritte.</h1>
         <p class="intro">
-          Dictation mit deiner bestehenden Intune-Verwaltung bereitstellen. Das
-          fertige Paket enthält den x64-Installer und die Installationsbefehle.
+          karabag-dict mit deiner bestehenden Intune-Verwaltung bereitstellen.
+          Das fertige Paket enthält den x64-Installer und die
+          Installationsbefehle.
         </p>
         <p class="notice">
           Alpha-Teststand. Die Veröffentlichung ist keine Sprachqualitäts- oder
@@ -73,7 +77,7 @@
           <div class="downloads">
             <article>
               <h3>Win32-Paket</h3>
-              <p>Windows x64 · 0.1.0-alpha.26</p>
+              <p>Windows x64 · 0.1.0-alpha.27</p>
               <a class="download" id="intune-download" aria-disabled="true"
                 >Intune-Paket herunterladen</a
               >
@@ -108,7 +112,7 @@
             auswählen“ die geladene .intunewin-Datei hochladen.
           </p>
           <div class="field">
-            <span>Name</span><code>KARABAG Dictation</code
+            <span>Name</span><code>karabag-dict</code
             ><button type="button" data-copy>Kopieren</button>
           </div>
           <div class="field">
@@ -116,7 +120,7 @@
             ><button type="button" data-copy>Kopieren</button>
           </div>
           <div class="field">
-            <span>App-Version</span><code>0.1.0-alpha.26</code
+            <span>App-Version</span><code>0.1.0-alpha.27</code
             ><button type="button" data-copy>Kopieren</button>
           </div>
         </div>
@@ -158,7 +162,7 @@
             <strong>Benutzer ist verbindlich.</strong> SYSTEM würde in das
             falsche Profil installieren und wird vom Paket abgewiesen. Keine
             Administratorrechte notwendig. Die stille Installation zeigt keine
-            Dialoge und startet die App nicht. Läuft Dictation, bleibt es
+            Dialoge und startet die App nicht. Läuft karabag-dict, bleibt es
             geöffnet; Intune versucht die Installation später erneut.
           </p>
           <table>
@@ -291,8 +295,8 @@
             <strong>Überwachen → Benutzerinstallationsstatus</strong>
             beziehungsweise „Geräteinstallationsstatus“ den Status
             <strong>Installiert</strong> prüfen. Im Startmenü des Nutzers steht
-            danach KARABAG Dictation. Eine erfolgreiche Installation bedeutet
-            noch nicht, dass die Sprachmodelle eingerichtet sind.
+            danach karabag-dict. Eine erfolgreiche Installation bedeutet noch
+            nicht, dass die Sprachmodelle eingerichtet sind.
           </p>
           <div class="milestones">
             <article>
@@ -324,7 +328,7 @@
           <details>
             <summary>Die Installation wartet oder schlägt fehl</summary>
             <p>
-              Bei Code 1618 Dictation regulär schließen; Intune kann erneut
+              Bei Code 1618 karabag-dict regulär schließen; Intune kann erneut
               versuchen. Bei 1603 den Benutzerkontext, freien Speicher und eure
               Schutzrichtlinien prüfen. Intune-Protokolle liegen unter
               <code
@@ -379,7 +383,7 @@
       </section>
       <p id="copy-status" role="status" aria-live="polite"></p>
       <footer>
-        <span id="version">Version 0.1.0-alpha.26</span
+        <span id="version">Version 0.1.0-alpha.27</span
         ><a href="SHA256SUMS">Prüfsummen</a><a href="./">Alle Downloads</a>
       </footer>
     </main>

@@ -1,9 +1,9 @@
 {
-  "version": "0.1.0-alpha.26",
-  "mac": "https://github.com/naimkarabag/karabag-dictation-downloads/releases/download/v0.1.0-alpha.26/KARABAG-Dictation-0.1.0-alpha.26-mac.dmg",
-  "windows": "https://github.com/naimkarabag/karabag-dictation-downloads/releases/download/v0.1.0-alpha.26/KARABAG-Dictation-0.1.0-alpha.26-windows-setup.exe",
-  "windows_arm": "https://github.com/naimkarabag/karabag-dictation-downloads/releases/download/v0.1.0-alpha.26/KARABAG-Dictation-0.1.0-alpha.26-windows-arm64-setup.exe",
-  "windows_x64": "https://github.com/naimkarabag/karabag-dictation-downloads/releases/download/v0.1.0-alpha.26/KARABAG-Dictation-0.1.0-alpha.26-windows-x64-setup.exe",
-  "intune": "https://github.com/naimkarabag/karabag-dictation-downloads/releases/download/v0.1.0-alpha.26/KARABAG-Dictation-0.1.0-alpha.26-windows-x64.intunewin",
-  "intune_detect": "https://github.com/naimkarabag/karabag-dictation-downloads/releases/download/v0.1.0-alpha.26/KARABAG-Dictation-0.1.0-alpha.26-intune-detect.ps1"
+  "version": "0.1.0-alpha.27",
+  "mac": "https://github.com/naimkarabag/karabag-dictation-downloads/releases/download/v0.1.0-alpha.27/karabag-dict-0.1.0-alpha.27-mac.dmg",
+  "windows": "https://github.com/naimkarabag/karabag-dictation-downloads/releases/download/v0.1.0-alpha.27/karabag-dict-0.1.0-alpha.27-windows-setup.exe",
+  "windows_arm": "https://github.com/naimkarabag/karabag-dictation-downloads/releases/download/v0.1.0-alpha.27/karabag-dict-0.1.0-alpha.27-windows-arm64-setup.exe",
+  "windows_x64": "https://github.com/naimkarabag/karabag-dictation-downloads/releases/download/v0.1.0-alpha.27/karabag-dict-0.1.0-alpha.27-windows-x64-setup.exe",
+  "intune": "https://github.com/naimkarabag/karabag-dictation-downloads/releases/download/v0.1.0-alpha.27/karabag-dict-0.1.0-alpha.27-windows-x64.intunewin",
+  "intune_detect": "https://github.com/naimkarabag/karabag-dictation-downloads/releases/download/v0.1.0-alpha.27/karabag-dict-0.1.0-alpha.27-intune-detect.ps1"
 }

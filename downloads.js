@@ -20,9 +20,10 @@
       if (
         url.protocol !== "https:" ||
         url.hostname !== "github.com" ||
-        !url.pathname.startsWith(
+        ![
+          "/naimkarabag/karabag-dict-downloads/releases/download/",
           "/naimkarabag/karabag-dictation-downloads/releases/download/",
-        )
+        ].some((prefix) => url.pathname.startsWith(prefix))
       )
         throw new Error("Unexpected download source");
       link.href = url.href;
