@@ -1,19 +1,19 @@
 {
-  "version": "0.1.0-alpha.27",
-  "notes": "karabag-dict: neuer Produktname, helle Downloadseite im Suite-Design und kompatibles App-Update mit unver\u00e4nderten pers\u00f6nlichen Daten. Alpha-Teststand.",
-  "pub_date": "2026-10-05T20:38:42.461840+00:00",
+  "version": "0.1.0-alpha.28",
+  "notes": "Firmenw\u00f6rterbuch mit 417 gepr\u00fcften Schreibweisen und 472 Eintr\u00e4gen, einschlie\u00dflich freigegebener Mitarbeiternamen. Gemeinsamer Bestand mit eigener Version und Suche; Aktualisierung \u00fcber signierte App-Updates. Pers\u00f6nliche W\u00f6rter und importierte Firmenlisten bleiben erhalten. Alpha-Teststand; keine allgemeine Sprachqualit\u00e4tsabnahme.",
+  "pub_date": "2026-10-06T07:12:12.030194+00:00",
   "platforms": {
     "darwin-aarch64": {
-      "url": "https://github.com/naimkarabag/karabag-dictation-downloads/releases/download/v0.1.0-alpha.27/karabag-dict-0.1.0-alpha.27-mac.app.tar.gz",
-      "signature": "dW50cnVzdGVkIGNvbW1lbnQ6IHNpZ25hdHVyZSBmcm9tIHRhdXJpIHNlY3JldCBrZXkKUlVSdS80YVJBT3NDTHA1endQREJuTUVraGVFV2wvSDFzblFVVnA5K2dZNUU2eWlSbDVuS3FlMHpoQzM1NE5LM2daeHlUOUpzVzlwUlRHSnRua2tIR25xcTRTWjVKdjdYancwPQp0cnVzdGVkIGNvbW1lbnQ6IHRpbWVzdGFtcDoxNzkxMjMxODgzCWZpbGU6a2FyYWJhZy1kaWN0LmFwcC50YXIuZ3oJdmVyc2lvbjowLjEuMC1hbHBoYS4yNwpRZHl6L2tvcWhmYmZaN3RZREJrVUE5UDBoSzZCaGZuZHM4Rmpoc0VNeFJ0TFBIcjVPY05pbkl0ek40VEVzWjFUaXVZSCtvamFrd2ZCc2dITXVOLzFCQT09Cg=="
+      "url": "https://github.com/naimkarabag/karabag-dictation-downloads/releases/download/v0.1.0-alpha.28/karabag-dict-0.1.0-alpha.28-mac.app.tar.gz",
+      "signature": "dW50cnVzdGVkIGNvbW1lbnQ6IHNpZ25hdHVyZSBmcm9tIHRhdXJpIHNlY3JldCBrZXkKUlVSdS80YVJBT3NDTHRMRXpUa00rMzgxWWIzY0o4VmhPMFJPTjJ4bmFERHNUeGdjM3NFWEgvN1JYQkh3NWc5R09lQnBaTWFWZmVvUGd0ZUpyYmN6Z1hHRmV5ZGQzd2tnR3dFPQp0cnVzdGVkIGNvbW1lbnQ6IHRpbWVzdGFtcDoxNzkxMjY5ODE3CWZpbGU6a2FyYWJhZy1kaWN0LmFwcC50YXIuZ3oJdmVyc2lvbjowLjEuMC1hbHBoYS4yOApMNHNCQnRWWmhUYXhERkhmUkhXcnc3K3JXMTRkV2RsRFZsKzJKMzZQRUpCNHRGWEVueXVZOXZYLzc4bGZyUlBqODdmeFFpWUVHMm5XaWluT3JFMkJDdz09Cg=="
     },
     "windows-aarch64": {
-      "url": "https://github.com/naimkarabag/karabag-dictation-downloads/releases/download/v0.1.0-alpha.27/karabag-dict-0.1.0-alpha.27-windows-arm64-setup.exe",
-      "signature": "dW50cnVzdGVkIGNvbW1lbnQ6IHNpZ25hdHVyZSBmcm9tIHRhdXJpIHNlY3JldCBrZXkKUlVSdS80YVJBT3NDTHUrN09ZZlJNY3BUNm12SjdnMzh6V2tEQlVscVg5TWk1VnJpU1VxeFRKNDA1dEhZMjVzdEpUUC95NWl5UnlUbDhmK3VNc3A3K1BJZ0xVUDFwcWpROEFNPQp0cnVzdGVkIGNvbW1lbnQ6IHRpbWVzdGFtcDoxNzkxMjMyNzE4CWZpbGU6d2luZG93cy1hcm02NC1zZXR1cC5leGUJdmVyc2lvbjowLjEuMC1hbHBoYS4yNwpSbVF2QXl1WmpvODNtczlzVzdqbFMzRS9FeGdvWk1xMmR6YlRYcURIV3dtTWRUTzVPRlJ2NmNQQ0IwdGl6YnVldTNNMTJvVmw5TS9IZTVHWEJpZGJDdz09Cg=="
+      "url": "https://github.com/naimkarabag/karabag-dictation-downloads/releases/download/v0.1.0-alpha.28/karabag-dict-0.1.0-alpha.28-windows-arm64-setup.exe",
+      "signature": "dW50cnVzdGVkIGNvbW1lbnQ6IHNpZ25hdHVyZSBmcm9tIHRhdXJpIHNlY3JldCBrZXkKUlVSdS80YVJBT3NDTG1Tc2IwaDZrUmRrSWNyWnkvYzcvSXJrTUxUOTdxQ29pcTlVZ2JmU1l1bVUwRi9LOFN4RWFENVlmeHBweVJYRFFMZWZlTC9pdFM1byt0SDJUN3NEakFzPQp0cnVzdGVkIGNvbW1lbnQ6IHRpbWVzdGFtcDoxNzkxMjcwNzI4CWZpbGU6d2luZG93cy1hcm02NC1zZXR1cC5leGUJdmVyc2lvbjowLjEuMC1hbHBoYS4yOAphOXFITVVBZXJoeVFHOXpYMVNEbVF4VHZFcGkyRnF4UUJ3eHRZUnh5dnE3b0VnbXRFanhJTmhCc0dpYVpQQStkTDVIaXEzN1JEaUNQRk9QTWRsWm1EZz09Cg=="
     },
     "windows-x86_64": {
-      "url": "https://github.com/naimkarabag/karabag-dictation-downloads/releases/download/v0.1.0-alpha.27/karabag-dict-0.1.0-alpha.27-windows-x64-setup.exe",
-      "signature": "dW50cnVzdGVkIGNvbW1lbnQ6IHNpZ25hdHVyZSBmcm9tIHRhdXJpIHNlY3JldCBrZXkKUlVSdS80YVJBT3NDTHV3anBKeVJGcGs2RXdndEJCb0ZxQ1JqbG5GNmVYK3hWTlhQcEdmVnhuc3ZVYTBsbnppZEhiV2tQbCtHek1IWDhlSi9CaVA2RDJuTWt4MmlCL3VQN2dRPQp0cnVzdGVkIGNvbW1lbnQ6IHRpbWVzdGFtcDoxNzkxMjMyNzE5CWZpbGU6d2luZG93cy14NjQtc2V0dXAuZXhlCXZlcnNpb246MC4xLjAtYWxwaGEuMjcKa3h0bXRuWnhtWTROa2NJVU5XRXFQbDlCU3BiR2xxVmJBSW5OUUxUVU01SFY1RzVnNHpyTDJ1OU5ieEEzSG55VmRyQlBvMW5KU0wySWsxTUFLd2hoQ1E9PQo="
+      "url": "https://github.com/naimkarabag/karabag-dictation-downloads/releases/download/v0.1.0-alpha.28/karabag-dict-0.1.0-alpha.28-windows-x64-setup.exe",
+      "signature": "dW50cnVzdGVkIGNvbW1lbnQ6IHNpZ25hdHVyZSBmcm9tIHRhdXJpIHNlY3JldCBrZXkKUlVSdS80YVJBT3NDTHVSbW04N094ZWVoQVJwdlY1Y0dKaFBvdmY1TjkwNVNpNnpRMW1nRk9vOFUyOERLRWs2TVdEM2JQZXdsQWR5eHZrMFU2TTNNUmU1U2FYenNmNVNqd2dRPQp0cnVzdGVkIGNvbW1lbnQ6IHRpbWVzdGFtcDoxNzkxMjcwNzI4CWZpbGU6d2luZG93cy14NjQtc2V0dXAuZXhlCXZlcnNpb246MC4xLjAtYWxwaGEuMjgKem05NnZMTDIweHc3QmtvcktadTZuOThpbVRmaFFDbXI2bDZ2YnA4QkpUQndEQXN4eGp5eGgybGNXVDBFTkk0UHRVMUhOTXNGQW9SUkQ1MHlLSWZmRGc9PQo="
     }
   }
 }
