@@ -1,19 +1,19 @@
 {
-  "version": "0.1.0-alpha.31",
-  "notes": "Lokale Windows-x64-Bereinigung mit mitgeliefertem CUDA und Vulkan, automatischer Ger\u00e4tewahl und passendem CPU-R\u00fcckfall. Vollst\u00e4ndige pers\u00f6nliche Regel, Modelle und Daten bleiben erhalten. Physische GPU-Pr\u00fcfung folgt; Alpha-Teststand.",
-  "pub_date": "2026-10-06T16:03:39.693089+00:00",
+  "version": "0.1.0-alpha.32",
+  "notes": "Erweiterte Leistungsdiagnose: Rechenhardware, Treiber, GPU-Auslagerung, Ressourcen und detaillierte Zeiten im Debug-Export. Vorbereitung der gezielten Windows-Analyse; noch keine Performance-Freigabe.",
+  "pub_date": "2026-10-09T13:17:27.636495+00:00",
   "platforms": {
     "darwin-aarch64": {
-      "url": "https://github.com/naimkarabag/karabag-dictation-downloads/releases/download/v0.1.0-alpha.31/karabag-dict-0.1.0-alpha.31-mac.app.tar.gz",
-      "signature": "dW50cnVzdGVkIGNvbW1lbnQ6IHNpZ25hdHVyZSBmcm9tIHRhdXJpIHNlY3JldCBrZXkKUlVSdS80YVJBT3NDTHBCS2lKcCsrUUI0QThaS0pGS0hsUmd3bCtVa04zTHhyeUJmblYxdEswREx5d1RGL0RteUFUUUsvUFQrR3pGZ2tJdmYva1BLbDdsdGtTbEw2SlpDeGdzPQp0cnVzdGVkIGNvbW1lbnQ6IHRpbWVzdGFtcDoxNzkxMzAxMDk4CWZpbGU6a2FyYWJhZy1kaWN0LmFwcC50YXIuZ3oJdmVyc2lvbjowLjEuMC1hbHBoYS4zMQo2M2ZEN2dFMkV0SGFQMjZOR0NUZEx1MjdRSHNsdU95ZGZmVkRjSENKLzQxMVEwSHdMc2dndWd3QW44d25OZEVaeDNUbE9jK3RsaXdXTkFKT3doaktEUT09Cg=="
+      "url": "https://github.com/naimkarabag/karabag-dictation-downloads/releases/download/v0.1.0-alpha.32/karabag-dict-0.1.0-alpha.32-mac.app.tar.gz",
+      "signature": "dW50cnVzdGVkIGNvbW1lbnQ6IHNpZ25hdHVyZSBmcm9tIHRhdXJpIHNlY3JldCBrZXkKUlVSdS80YVJBT3NDTHFkdEtTYU1lUS9KQ1pqWHkrYThlTHNLVHg5bzFZTnR1SHplMEtPYkJjejVLYUVRZXNiVDdBRy9VNzVDY243S0pWRVc3TGpVSTZ1V3laNFp4L2ZWYXdZPQp0cnVzdGVkIGNvbW1lbnQ6IHRpbWVzdGFtcDoxNzkxNTQ4NTQ4CWZpbGU6a2FyYWJhZy1kaWN0LmFwcC50YXIuZ3oJdmVyc2lvbjowLjEuMC1hbHBoYS4zMgpiVnpjUEZ4cFpuWGVpRTJNUjhkQ1hLblVtQ3RrYjlMMWFlaUhvejN3bE5BM0tkL0F4TDE1dHNrVkJYQVRWMjExd3dFU1FuZk51REIwZmpNM3dMaEFCZz09Cg=="
     },
     "windows-aarch64": {
-      "url": "https://github.com/naimkarabag/karabag-dictation-downloads/releases/download/v0.1.0-alpha.31/karabag-dict-0.1.0-alpha.31-windows-arm64-setup.exe",
-      "signature": "dW50cnVzdGVkIGNvbW1lbnQ6IHNpZ25hdHVyZSBmcm9tIHRhdXJpIHNlY3JldCBrZXkKUlVSdS80YVJBT3NDTHRZdHlkR000Nkw4emNjSllaQUVkS0RHYWR5OXFIRXhuOGtGemNPd0JYeUtGNFpWT1lqWW9CQ2p6VEhQS3hMSUdKdktXbmxEZHljWlViMXFSZDdieGdnPQp0cnVzdGVkIGNvbW1lbnQ6IHRpbWVzdGFtcDoxNzkxMzAyNjEyCWZpbGU6d2luZG93cy1hcm02NC1zZXR1cC5leGUJdmVyc2lvbjowLjEuMC1hbHBoYS4zMQpyQU00VGJha0N0cGFQeGE2SW55M1gxa2pLd2RUMEtGSFA1eWJyT1BWQzN4c2ZSLzI3MjdaWUo2UVlCOU5PTUQxU3NzaHdWam5Xc3hXNlVCNmpPVzJCdz09Cg=="
+      "url": "https://github.com/naimkarabag/karabag-dictation-downloads/releases/download/v0.1.0-alpha.32/karabag-dict-0.1.0-alpha.32-windows-arm64-setup.exe",
+      "signature": "dW50cnVzdGVkIGNvbW1lbnQ6IHNpZ25hdHVyZSBmcm9tIHRhdXJpIHNlY3JldCBrZXkKUlVSdS80YVJBT3NDTG1pRTdHZ1d2SzNYM21kRk1PZDVoN2drMFhjWjFxNDBlL3lXa0I5c3NXQW9wQ3NTRG1iQS9qWVlWTEl4a3Iyb2JCaE9Ca0swcHM3aGxqVjdFcXhoUWdNPQp0cnVzdGVkIGNvbW1lbnQ6IHRpbWVzdGFtcDoxNzkxNTUxODQxCWZpbGU6d2luZG93cy1hcm02NC1zZXR1cC5leGUJdmVyc2lvbjowLjEuMC1hbHBoYS4zMgpMVjhMUk1WcWlXWERUdXJyc21aOWVxWTVXdGJxbEo5dGRuQ1VoNzFOZDFrcGVsSkQvdklyT01UYm5NNmRFaWFoaEYwRll3cm1ZRURrZ2JFN0doSmhCdz09Cg=="
     },
     "windows-x86_64": {
-      "url": "https://github.com/naimkarabag/karabag-dictation-downloads/releases/download/v0.1.0-alpha.31/karabag-dict-0.1.0-alpha.31-windows-x64-setup.exe",
-      "signature": "dW50cnVzdGVkIGNvbW1lbnQ6IHNpZ25hdHVyZSBmcm9tIHRhdXJpIHNlY3JldCBrZXkKUlVSdS80YVJBT3NDTGdZdVZPcmZiKzJSaUxKSUNGc2FaRVBSNU85N1NsTkFqSHpIeVd0ZjBGRFlzWnJnVWFST1o1Uy9pZ1ltbFUvVFZ6ZmV2T0UvYUlzRG5STStjbGp5M0FJPQp0cnVzdGVkIGNvbW1lbnQ6IHRpbWVzdGFtcDoxNzkxMzAyNjEzCWZpbGU6d2luZG93cy14NjQtc2V0dXAuZXhlCXZlcnNpb246MC4xLjAtYWxwaGEuMzEKOW10Z3F5bG9US2U4ZTJPa3RVNGtZdkF2UEl0WTE3aUhQdVAvTitYUzd4S1VzTnlCYlA3OHgrUmdKZGw3cXB5dW1PRDBhMSt4NFI1TGU1aHRYZ3pIQ2c9PQo="
+      "url": "https://github.com/naimkarabag/karabag-dictation-downloads/releases/download/v0.1.0-alpha.32/karabag-dict-0.1.0-alpha.32-windows-x64-setup.exe",
+      "signature": "dW50cnVzdGVkIGNvbW1lbnQ6IHNpZ25hdHVyZSBmcm9tIHRhdXJpIHNlY3JldCBrZXkKUlVSdS80YVJBT3NDTHFnMThmYStFaDF3cU1hYUZJZWJ6a0QvTys0bzdpMlU5YnVzUTVVeldIekNlRTZZdjhMc25tSmc2UTd6NERqMURIWG05WlpzVHJjemErUGd3TXFBVHdRPQp0cnVzdGVkIGNvbW1lbnQ6IHRpbWVzdGFtcDoxNzkxNTUxODQyCWZpbGU6d2luZG93cy14NjQtc2V0dXAuZXhlCXZlcnNpb246MC4xLjAtYWxwaGEuMzIKVTZVRjVqWGM4RzhocEJEa3FOSFpOOFJGQnhFdDFRWmw4TDlVM0kxMVp6Q1ZLd1p4ZVJqSmRiTFJhazVrZ1pBTjk5dldGSy83NmozN2dEbzEvYi9vQ3c9PQo="
     }
   }
 }
